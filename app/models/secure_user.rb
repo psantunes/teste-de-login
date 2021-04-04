@@ -7,9 +7,4 @@ class SecureUser < ApplicationRecord
   before_save do |user|
     user.bio = strip_tags(user.bio)
   end
-    
-
-  def strip_html_tags(text)
-    ActionView::Base.full_sanitizer.sanitize(text)
-  end
 end
