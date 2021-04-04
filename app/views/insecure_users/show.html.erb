@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Login:</strong>
+  <%= @insecure_user.login %>
+</p>
+
+<p>
+  <strong>Password:</strong>
+  <%= @insecure_user.password %>
+</p>
+
+<p>
+  <strong>Bio:</strong>
+  <%= @insecure_user.bio %>
+</p>
+
+<%= link_to 'Edit', edit_insecure_user_path(@insecure_user) %> |
+<%= link_to 'Back', insecure_users_path %>

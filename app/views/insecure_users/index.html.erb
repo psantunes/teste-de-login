@@ -1,0 +1,32 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Insecure Users</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Login</th>
+      <th>Password</th>
+      <th>Bio</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @insecure_users.each do |insecure_user| %>
+      <tr>
+        <td><%= insecure_user.login %></td>
+        <td><%= insecure_user.password %></td>
+        <td><%= insecure_user.bio %></td>
+        <td><%= link_to 'Show', insecure_user %></td>
+        <td><%= link_to 'Edit', edit_insecure_user_path(insecure_user) %></td>
+        <td><%= link_to 'Destroy', insecure_user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+
+<%= link_to 'New Insecure User', new_insecure_user_path %>
