@@ -1,4 +1,4 @@
-# Teste de Login em Ruby on Rails
+# Teste de Login com segurança em Ruby on Rails
 
 Projeto construído para a disciplina de Segurança e Auditoria, do curso de Tecnologia em Sistemas para Internet do IFRS Porto Alegre, sob orientação do professor André Peres.
 
